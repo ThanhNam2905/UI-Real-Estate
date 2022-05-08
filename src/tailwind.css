@@ -47,6 +47,35 @@
                 cursor-pointer
                 transition-all
                 ease-in-out
-                duration-500;
+                duration-500
+                hover:bg-red-600 
+                hover:shadow-lg 
+                hover:shadow-red-500;
+    }
+
+    .heading__2 {
+        @apply  text-[40px]
+                leading-[50px]
+                font-semibold
+                mb-4;
+    }
+
+    .tags {
+        @apply  absolute
+                top-3
+                left-3
+    }
+
+    .tag__content {
+        @apply  inline-block
+                py-1
+                px-3
+                bg-gray-800
+                border-2 
+                border-white
+                text-white
+                rounded-lg
+                bg-opacity-50
+                mr-1.5
     }
 }
