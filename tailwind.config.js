@@ -12,7 +12,8 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
       },
       colors: {
-        'orange-primary': '#ff9900'
+        'orange-primary': '#ff9900',
+        'color-btn': '#F85A47',
       }
     },
   },

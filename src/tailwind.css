@@ -16,7 +16,14 @@
                 transition-all
                 ease-in-out
                 duration-500
-                font-normal;
+                font-normal
+                outline-none;
+                
+    }
+
+    html {
+        @apply scroll-smooth
+                scroll-pt-16;
     }
 
 }
@@ -29,5 +36,17 @@
                 mr-auto
                 pl-4
                 pr-4;
+    }
+
+    .btn {
+        @apply bg-color-btn
+                text-white
+                py-6
+                px-9
+                leading-none
+                cursor-pointer
+                transition-all
+                ease-in-out
+                duration-500;
     }
 }
