@@ -17,13 +17,13 @@
                 ease-in-out
                 duration-500
                 font-normal
-                outline-none;
-                
+                outline-none;        
     }
 
     html {
-        @apply scroll-smooth
-                scroll-pt-16;
+        @apply  scroll-smooth
+                scroll-pt-16
+                overflow-x-hidden;
     }
 
 }
@@ -77,5 +77,79 @@
                 rounded-lg
                 bg-opacity-50
                 mr-1.5
+    }
+
+    .form-subscribes:focus-within {
+        @apply  border-2 
+                border-color-btn
+                transition-all 
+                ease-in-out 
+                duration-500;
+    }
+    .form-subscribes:focus-within label {
+        @apply  transform
+                -translate-y-4
+                opacity-0
+                transition-all 
+                ease-in-out 
+                duration-500;
+    }
+    .form-subscribes:focus-within input[type="email"] {
+        @apply  transform
+                -translate-y-4
+                transition-all 
+                ease-in-out 
+                duration-500;
+    }
+
+    /* CSS Header when onscroll */
+    .header-menu.active {
+        @apply 
+                fixed
+                top-0
+                left-0
+                right-0
+                z-[99999] 
+                transition-all
+                ease-in-out
+                duration-1000 
+                bg-red-500
+                text-white 
+                py-8
+                px-32;
+    }
+
+    .header-menu.active #navbar li a {
+        @apply  text-gray-100;
+                
+    }
+
+    /* CSS Btn scroll-top */
+    #btn-scroll-top i {
+        @apply  fixed
+                bottom-8
+                -right-20
+                z-[999]
+                text-3xl
+                opacity-0
+                py-2
+                px-4
+                border-4
+                rounded-xl
+                bg-red-500
+                text-white
+                cursor-pointer
+                transition-all
+                ease-in-out
+                duration-500
+                animate-bounce
+                hover:bg-red-600
+                hover:border-red-600
+                hover:border-double
+    }
+    #btn-scroll-top i.fa-solid.fa-angle-up.active {
+        @apply  
+                right-10
+                opacity-100     
     }
 }

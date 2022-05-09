@@ -17,15 +17,22 @@
 <body>
 
     <div class="max-w-[1660px] mx-auto">
+
+        <!-- Button Scroll To Top -->
+        <div id="btn-scroll-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+
+        <!-- Header section start -->
         <header class="pt-9 relative mb-52">
             <div class="bg-[#BDCCFF] w-[38%] h-full absolute top-0 right-0 z-0"></div>
 
             <div class="layout-container relative z-10">
-                <div class="header-menu flex items-center justify-between mb-[157px]">
+                <div class="header-menu flex items-center justify-between mb-[157px] transition-all ease-in-out duration-500">
                     <!-- Logo -->
                     <a href="index.html" class="font-extrabold text-[23px]">SmartSpace</a>
                     <!-- Navigation -->
-                    <ul id="navbar" class="flex items-center gap-x-[46px] font-sans text-[18px]">
+                    <ul id="navbar" class="hidden lg:flex items-center gap-x-[46px] font-sans text-[18px]">
                         <li>
                             <a href="/" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Home</a>
                         </li>
@@ -39,7 +46,7 @@
                             <a href="#featured" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Featured</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Blog</a>
+                            <a href="#blogs" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +65,7 @@
                         </div>
                         <div class="mt-[164px]">
                             <p class="text-[16px] text-gray-500">Our Amazing Partners</p>
-                            <div class="flex items-center gap-x-12 mt-7">
+                            <div class="flex flex-col lg:flex-row items-center gap-x-12 mt-7">
                                 <img src="./public/images/logo-buzz.png" alt="logo-buzz">
                                 <img src="./public/images/logo-chase.png" alt="logo-chase">
                                 <img src="./public/images/logo-microsoft.png" alt="logo-microsoft">
@@ -81,14 +88,16 @@
                 <a href="#" title="Github"><i class="fa-brands fa-github text-gray-800 transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
             </div>
         </header>
+        <!-- Header section end -->
 
         <main class="">
+            <!-- About section start -->
             <section class="about" id="about">
                 <div class="layout-container px-12 mb-[102px]">
                     <h3 class="heading__2 text-center">How it works?</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-[150px] gap-y-12 mt-[70px]">
                         <div class="box flex flex-col text-center relative">
-                            <img src="./public/images/about-icon-left.png" class="absolute top-10 left-[90%]" alt="">
+                            <img src="./public/images/about-icon-left.png" class="absolute hidden lg:block top-10 left-[90%]" alt="">
                             <div class="bg-[#9672FF] w-20 h-20 rounded-xl mx-auto flex items-center justify-center">
                                 <img src="./public/images/about-icon-1.png" class="w-6 h-6 leading-none text-white" alt="">
                             </div>
@@ -105,7 +114,7 @@
                             <p class="font-roboto text-base text-gray-500 leading-7">Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
                         </div>
                         <div class="box flex flex-col text-center relative">
-                            <img src="./public/images/about-icon-right.png" class="absolute top-10 right-[90%]" alt="">
+                            <img src="./public/images/about-icon-right.png" class="absolute hidden lg:block top-10 right-[90%]" alt="">
                             <div class="bg-[#F2B8EC] w-20 h-20 mx-auto rounded-xl flex items-center justify-center">
                                 <img src="./public/images/about-icon-3.png" class="w-6 h-6 leading-none text-white" alt="">
                             </div>
@@ -116,6 +125,9 @@
                     </div>
                 </div>
             </section>
+            <!-- About section end -->
+
+            <!-- Services section start -->
             <section class="services" id="services">
                 <div class="layout-container py-[123px]">
                     <div class="flex justify-between items-start">
@@ -132,7 +144,7 @@
                         <h5 class="text-[19px] font-semibold leading-[26px]">Industrial Property</h5>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px]">
-                        <div class="box relative">
+                        <div class="box relative cursor-pointer">
                             <div class="tags">
                                 <span class="tag__content">Featured</span>
                                 <span class="tag__content">3D</span>
@@ -140,14 +152,14 @@
 
                             <img src="./public/images/services-1.png" alt="">
                         </div>
-                        <div class="box relative">
+                        <div class="box relative cursor-pointer">
                             <div class="tags">
                                 <span class="tag__content">Featured</span>
                                 <span class="tag__content">3D</span>
                             </div>
                             <img src="./public/images/services-2.png" alt="">
                         </div>
-                        <div class="box relative">
+                        <div class="box relative cursor-pointer">
                             <div class="tags">
                                 <span class="tag__content">Featured</span>
                                 <span class="tag__content">3D</span>
@@ -157,13 +169,16 @@
                     </div>
                 </div>
             </section>
+            <!-- Services section end -->
+
+            <!-- Featured section start -->
             <section class="featured" id="featured">
                 <div class="layout-container mt-[120px]">
                     <h2 class="heading__2 text-center mb-24">Featured Listing of the Week</h2>
                 
                     <div class="p-10 bg-[#F1FFFF] flex items-start gap-x-[77px]">
-                        <div class="featured__images">
-                            <img src="./public/images/featured-1.png" class="max-w-[492px] h-full object-cover" alt="">
+                        <div class="featured__images h-[601px]">
+                            <img src="./public/images/featured-1.png" class="max-w-[492px] object-cover" alt="">
                             <img src="./public/images/featured-2.png" class="relative -top-28 left-[41px] drop-shadow-custom-1" alt="">
                         </div>
                         <div class="featured__content">
@@ -200,8 +215,129 @@
                     </div>
                 </div>
             </section>
+            <!-- Featured section end -->
+            
+            <!-- Blogs section start -->
+            <section class="blogs" id="blogs">
+                <div class="layout-container mt-[190px] mb-[200px]">
+                    <h2 class="heading__2 max-w-[570px] leading-[55px] mb-[50px]">Loved by businesses, and individuals across the globe.</h2>
+                    <div class="blog-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px]">
+                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
+                            <div class="rating text-[#FBB040] mb-8">
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star-half w-4 h-4 mr-1"></i>
+                            </div>
+                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> Moderate children at of outweigh it. Unsatiable it considered invitation he
+                                 travelling insensible. Consulted admitting oh mr up as described.
+                            </p>
+                            <div class="flex items-center gap-x-5">
+                                <div class="avatar">
+                                    <img src="./public/images/user-1.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                </div>
+                                <div class="info">
+                                    <h5 class="text-base font-bold">Jane Cooper</h5>
+                                    <p class="text-sm text-gray-500">Los Angeles, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
+                            <div class="rating text-[#FBB040] mb-8">
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star-half w-4 h-4 mr-1"></i>
+                            </div>
+                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> The and collecting motionless difficulty son. 
+                                His hearing staying ten colonel met. Sex drew six easy four dear cold
+                            </p>
+                            <div class="flex items-center gap-x-5">
+                                <div class="avatar">
+                                    <img src="./public/images/user-2.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                </div>
+                                <div class="info">
+                                    <h5 class="text-base font-bold">Robert Fox</h5>
+                                    <p class="text-sm text-gray-500">New York City, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
+                            <div class="rating text-[#FBB040] mb-8">
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
+                                <i class="fa-regular fa-star w-4 h-4 mr-1"></i>
+                            </div>
+                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> Sociable on as carriage my position weddings raillery consider. 
+                                Peculiar trifling absolute and wandered vicinity property yet.
+                            </p>
+                            <div class="flex items-center gap-x-5">
+                                <div class="avatar">
+                                    <img src="./public/images/user-3.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                </div>
+                                <div class="info">
+                                    <h5 class="text-base font-bold">Leslie Alexander</h5>
+                                    <p class="text-sm text-gray-500">Buffalo, NJ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[84px] flex items-center justify-between">
+                        <div class="logo flex flex-col md:flex-row items-center gap-x-[80px]">
+                            <img src="./public/images/logo-airbnb.png" alt="logo-airbnb">
+                            <img src="./public/images/logo-cisco.png" alt="logo-cisco">
+                            <img src="./public/images/logo-ebay.png" alt="logo-ebay">
+                            <img src="./public/images/logo-uber.png" alt="logo-uber">
+                            <img src="./public/images/logo-microsoft.png" alt="logo-microsoft">
+                        </div>
+                        <div class="contact max-w-[300px] font-roboto text-base text-gray-600 leading-7">
+                            Give us a Call 1-888-111-2222 and we can set you up, or 
+                            <a href="#" class="text-[#2CBDE7] underline underline-offset-4">check our pricing plans</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blogs section end -->
         </main>
+
+        <!-- Footer section start -->
+        <footer class="footer bg-[#f0f3f3]">
+            <div class="layout-container">
+                <h2 class="heading__2 text-center text-[45px] pt-[160px]">Get Our Newsletter</h2>
+                <p class="mb-[34px] mt-[11px] font-bold text-[23px] text-center">To join the worldwide community</p>
+                <form class="form-subscribes max-w-[683px] mx-auto shadow-custom-1 py-[26px] px-[30px] bg-white flex items-center justify-between rounded-xl border-2 border-white" method="post">
+                    <div class="input-group flex-1 flex flex-col">
+                        <label for="input-email" class="text-[15px] font-medium text-gray-400 tracking-wide leading-7">Type your Email Address</label>
+                        <input type="email" name="mail" id="input-email" class="w-full border-red-300 text-[20px] outline-none tracking-wide font-bold placeholder:text-gray-800" placeholder="abc@gmail.com">
+                    </div>
+                    <input type="submit" value="Send now" class="btn py-5 rounded-xl">
+                </form>
+            </div>
+            <div class="px-[273px] pt-[60px] pb-[36px] mt-[160px]">
+                <div class="flex items-center justify-between pt-[60px] border-t-2 border-gray-300">
+                    <a href="/" class="logo text-2xl font-extrabold leading-8">SmartSpace</a>
+                    <ul class="flex flex-col md:flex-row items-center gap-x-[46px]">
+                        <li><a href="/" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Home</a></li>
+                        <li><a href="#about" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">About</a></li>
+                        <li><a href="#services" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Services</a></li>
+                        <li><a href="#featured" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Featured</a></li>
+                        <li><a href="#blogs" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="creadit__footer mt-[70px] text-center text-[14px] text-gray-600 font-bold">
+                    <p>Copyright &copy; 2021 AR Shakir || <span class="text-color-btn">Monday, May 9, 2022</span></p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
     </div>
     
+
+    <!-- Write JS main.js -->
+    <script src="./public/js/main.js" type="text/javascript"></script>
 </body>
 </html>
