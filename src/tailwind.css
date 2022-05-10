@@ -38,6 +38,49 @@
                 pr-4;
     }
 
+    .heading__1 {
+        @apply  font-extrabold 
+                text-[32px]
+                max-w-full
+                mb-3 
+
+                md:max-w-[484px]
+                md:text-[38px] 
+                md:mb-5
+                md:text-transparent 
+                md:bg-clip-text 
+                md:bg-gradient-to-t 
+                md:from-indigo-500 
+                md:via-purple-500 
+                md:to-pink-500
+
+                lg:mb-7
+                lg:text-[48px]
+                lg:text-gray-800;
+    }
+
+    .heading__2 {
+        @apply  text-[27px]
+                leading-[50px]
+                font-semibold
+                mb-2
+
+                md:text-[30px]
+                md:mb-2
+                
+                lg:text-[40px]
+                lg:mb-4;
+    }
+
+    .text-gradient-style-color-messenger {
+        @apply  text-transparent 
+                bg-clip-text 
+                bg-gradient-to-tr 
+                from-indigo-500 
+                via-purple-500 
+                to-pink-500;
+    }
+
     .btn {
         @apply bg-color-btn
                 text-white
@@ -51,13 +94,6 @@
                 hover:bg-red-600 
                 hover:shadow-lg 
                 hover:shadow-red-500;
-    }
-
-    .heading__2 {
-        @apply  text-[40px]
-                leading-[50px]
-                font-semibold
-                mb-4;
     }
 
     .tags {
@@ -99,7 +135,8 @@
                 -translate-y-4
                 transition-all 
                 ease-in-out 
-                duration-500;
+                duration-500
+                md:-translate-y-3.5;
     }
 
     /* CSS Header when onscroll */
@@ -112,16 +149,51 @@
                 z-[99999] 
                 transition-all
                 ease-in-out
-                duration-1000 
+                duration-700 
                 bg-red-500
                 text-white 
-                py-8
-                px-32;
+                bg-opacity-90
+                py-2.5
+                px-6
+
+                md:py-3
+                md:px-10
+
+                lg:px-32
+                lg:py-8;
     }
 
-    .header-menu.active #navbar li a {
-        @apply  text-gray-100;
+    .header-menu.active .navbar {
+        @apply  top-0
+                -right-[117%]
+                transition-all
+                ease-in-out 
+                duration-500
                 
+                md:-right-[107%];
+    }
+    .header-menu.active .navbar.active {
+        @apply  
+                -right-4
+                transition-all
+                ease-in-out 
+                duration-500;
+    }
+
+    .header-menu.active .navbar li a {
+        @apply  text-gray-100;         
+    }
+
+    .header-menu .navbar.active li a {
+        @apply  text-gray-700
+                hover:text-white
+                hover:bg-color-btn
+                py-1.5 
+                px-5 
+                rounded-lg;
+    }
+    .header-menu.active .navbar.active #btn--close__menu {
+        @apply  text-gray-700;
     }
 
     /* CSS Btn scroll-top */
@@ -130,13 +202,16 @@
                 bottom-8
                 -right-20
                 z-[999]
-                text-3xl
+                text-2xl
                 opacity-0
-                py-2
-                px-4
+                py-1
+                px-2.5
                 border-4
                 rounded-xl
-                bg-red-500
+                bg-gradient-to-tr 
+                from-indigo-500 
+                via-purple-500 
+                to-pink-500
                 text-white
                 cursor-pointer
                 transition-all
@@ -144,12 +219,83 @@
                 duration-500
                 animate-bounce
                 hover:bg-red-600
-                hover:border-red-600
+                hover:border-indigo-400
                 hover:border-double
+
+                md:py-1.5
+                md:px-3.5
+
+                lg:py-2
+                lg:px-4
+                lg:text-3xl
     }
     #btn-scroll-top i.fa-solid.fa-angle-up.active {
         @apply  
-                right-10
-                opacity-100     
+                right-6
+                opacity-100 
+                
+                md:right-8
+
+                lg:right-10
+    }
+    
+    /* CSS Navbar */
+    .navbar {
+        @apply  absolute 
+                p-14 
+                -top-9 
+                -right-[117%]
+                w-screen 
+                h-screen 
+                flex 
+                flex-col 
+                bg-gradient-to-tr from-indigo-100 via-purple-100 to-pink-100  
+                z-[999] 
+                items-center 
+                gap-x-[46px] 
+                gap-y-[24px] 
+                font-sans 
+                text-[18px] 
+                transition-all
+                ease-in-out
+                duration-700
+                opacity-20
+
+                md:w-3/5
+                md:-right-[107%]
+
+                lg:static
+                lg:flex-row
+                lg:p-0
+                lg:w-auto
+                lg:h-auto
+                lg:bg-none
+                lg:opacity-100;
+    }
+    .navbar.active {
+        @apply  -right-6
+                opacity-100;
+                box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    }
+    .navbar.active #btn--close__menu {
+        @apply  block;
+    }
+
+
+    /* CSS Btn Close Menu */
+    #btn--close__menu {
+        @apply  absolute 
+                top-5
+                cursor-pointer 
+                right-10 
+                z-[999] 
+                text-[30px] 
+                transform
+                transition-all
+                ease-in-out 
+                duration-500
+                hover:rotate-180
+                hidden
+                lg:hidden
     }
 }

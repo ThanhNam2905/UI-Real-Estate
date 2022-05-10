@@ -2,7 +2,7 @@
 const headerMenuEle = document.querySelector('.header-menu');
 
 window.addEventListener('scroll', () => {
-    if(scrollY > 100) {
+    if(scrollY > 50) {
         headerMenuEle.classList.add('active');
     }
     else if(scrollY == 0) {
@@ -27,4 +27,19 @@ window.addEventListener('scroll', () => {
     else {
         scrollTopBtnEle.classList.remove('active')
     }
+})
+
+// Btn MenuBar
+const menuBtnEle = document.querySelector('#menu-btn');
+const navbarMenuEle = document.querySelector('.navbar');
+const closeBtnMenuEle = document.querySelector('#btn--close__menu');
+
+menuBtnEle.addEventListener('click', () => {
+    navbarMenuEle.classList.toggle("active")
+    menuBtnEle.classList.add('hidden')
+})
+
+closeBtnMenuEle.addEventListener('click', () => {
+    navbarMenuEle.classList.remove("active")
+    menuBtnEle.classList.remove('hidden')
 })
