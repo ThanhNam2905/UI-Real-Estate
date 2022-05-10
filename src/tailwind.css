@@ -197,7 +197,7 @@
     }
 
     /* CSS Btn scroll-top */
-    #btn-scroll-top i {
+    #btn-scroll-top {
         @apply  fixed
                 bottom-8
                 -right-20
@@ -229,7 +229,7 @@
                 lg:px-4
                 lg:text-3xl
     }
-    #btn-scroll-top i.fa-solid.fa-angle-up.active {
+    #btn-scroll-top.fa-solid.fa-angle-up.active {
         @apply  
                 right-6
                 opacity-100 

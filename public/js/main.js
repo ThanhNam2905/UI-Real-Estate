@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 })
 
 // Scroll Top Btn
-const scrollTopBtnEle = document.querySelector('#btn-scroll-top i');
+const scrollTopBtnEle = document.querySelector('#btn-scroll-top');
 
 scrollTopBtnEle.addEventListener('click', () => {
     scrollTo({
