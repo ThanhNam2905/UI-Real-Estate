@@ -24,37 +24,40 @@
         </div>
 
         <!-- Header section start -->
-        <header class="pt-9 relative mb-52">
+        <header class="pt-6 md:pt-7 lg:pt-9 relative mb-16 md:mb-28 lg:mb-52 px-2.5 md:px-6 lg:px-0">
             <div class="bg-[#BDCCFF] w-[38%] h-full absolute top-0 right-0 z-0"></div>
 
             <div class="layout-container relative z-10">
-                <div class="header-menu flex items-center justify-between mb-[157px] transition-all ease-in-out duration-500">
+                <div class="header-menu flex items-center justify-between md:mb-[100px] lg:mb-[157px] transition-all ease-in-out duration-500">
                     <!-- Logo -->
                     <a href="index.html" class="font-extrabold text-[23px]">SmartSpace</a>
                     <!-- Navigation -->
-                    <ul id="navbar" class="hidden lg:flex items-center gap-x-[46px] font-sans text-[18px]">
+                    <ul class="navbar flex">
+                        <div id="btn--close__menu" class="fa-solid fa-xmark"></div>
                         <li>
-                            <a href="/" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Home</a>
+                            <a href="/" class="text-gray-500 text-[23px] lg:text-[19px] font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Home</a>
                         </li>
                         <li>
-                            <a href="#about" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">About</a>
+                            <a href="#about" class="text-gray-500 text-[23px] lg:text-[19px] font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">About</a>
                         </li>
                         <li>
-                            <a href="#services" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Services</a>
+                            <a href="#services" class="text-gray-500 text-[23px] lg:text-[19px] font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Services</a>
                         </li>
                         <li>
-                            <a href="#featured" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Featured</a>
+                            <a href="#featured" class="text-gray-500 text-[23px] lg:text-[19px] font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Featured</a>
                         </li>
                         <li>
-                            <a href="#blogs" class="text-gray-500 font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Blog</a>
+                            <a href="#blogs" class="text-gray-500 text-[23px] lg:text-[19px] font-semibold hover:text-orange-500 hover:underline hover:underline-offset-4 transition ease-in-out duration-500">Blog</a>
                         </li>
                     </ul>
+                    <!-- Btn menu-bars -->
+                    <div id="menu-btn" class="fa-solid fa-bars z-[9999] block lg:hidden text-[28px] cursor-pointer transition-all ease-in-out duration-700 transform hover:rotate-180"></div>
                 </div>
 
-                <div class="relative">
+                <div class="relative mt-12 md:mt-0">
                     <div class="relative z-10">
-                        <h3 class="text-orange-500 uppercase font-bold font-roboto text-[22px]">RESIDENTIAL & OFFICE SPACES</h3>
-                        <h1 class="font-extrabold text-[48px] max-w-[484px] mb-6">Smart Living Style for Smart People</h1>
+                        <h3 class="text-orange-500 uppercase font-bold font-roboto text-[17px] md:text-[19px] lg:text-[22px]">RESIDENTIAL & OFFICE SPACES</h3>
+                        <h1 class="heading__1">Smart Living Style for Smart People</h1>
                         <p class="text-[17px] max-w-[500px] text-gray-500 mb-6">Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman noisy match money rooms.</p>
                         <div class="mt-8 flex w-full max-w-[738px] items-center bg-white shadow-2xl overflow-hidden">
                             <div class="flex items-center gap-x-5 flex-1 border-2 border-r-0  border-gray-300 py-5 px-5 rounded-tl-lg rounded-bl-lg">
@@ -63,27 +66,27 @@
                             </div>
                             <button class="btn px-[42px]">Search now!</button>
                         </div>
-                        <div class="mt-[164px]">
+                        <div class="mt-[64px] md:mt-[124px] lg:mt-[224px]">
                             <p class="text-[16px] text-gray-500">Our Amazing Partners</p>
-                            <div class="flex flex-col lg:flex-row items-center gap-x-12 mt-7">
-                                <img src="./public/images/logo-buzz.png" alt="logo-buzz">
-                                <img src="./public/images/logo-chase.png" alt="logo-chase">
-                                <img src="./public/images/logo-microsoft.png" alt="logo-microsoft">
-                                <img src="./public/images/logo-gucc.png" alt="logo-gucc">
-                                <img src="./public/images/logo-airbnb.png" alt="logo-airbnb">
-                                <img src="./public/images/logo-uber.png" alt="logo-uber">
+                            <div class="grid grid-cols-3 items-center gap-x-4 gap-y-4 mt-4 md:flex md:grid-cols-none md:flex-row lg:mt-5 md:gap-x-8 lg:gap-x-12">
+                                <img src="./public/images/logo-buzz.png" class="" alt="logo-buzz">
+                                <img src="./public/images/logo-chase.png" class="" alt="logo-chase">
+                                <img src="./public/images/logo-microsoft.png" class="" alt="logo-microsoft">
+                                <img src="./public/images/logo-gucc.png" class="" alt="logo-gucc">
+                                <img src="./public/images/logo-airbnb.png" class="" alt="logo-airbnb">
+                                <img src="./public/images/logo-uber.png" class="" alt="logo-uber">
                             </div>
                         </div>
                     </div>
                     <div class="absolute -top-10 right-0 z-0">
-                        <img src="./public/images/banner-header.jpg" class="w-full h-full rounded-md object-cover" alt="">
+                        <img src="./public/images/banner-header.jpg" class="hidden h-full rounded-md object-cover md:h-[450px] md:block md:float-right md:w-11/12 lg:w-full lg:h-full lg:float-none" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center absolute top-1/2 right-9 gap-y-5 cursor-pointer text-3xl  transform -translate-y-1/2">
+            <div class="hidden lg:flex flex-col items-center absolute top-1/2 right-9 gap-y-5 z-50 cursor-pointer text-3xl  transform -translate-y-1/2">
                 <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f text-blue-600 transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
-                <a href="#" title="Messenger"><i class="fa-brands fa-facebook-messenger text-transparent bg-clip-text bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
+                <a href="#" title="Messenger"><i class="fa-brands fa-facebook-messenger text-gradient-style-color-messenger transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
                 <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin-in text-pink-600 transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
                 <a href="#" title="Github"><i class="fa-brands fa-github text-gray-800 transition-all ease-in-out duration-700 transform hover:rotate-[360deg] hover:scale-125"></i></a>
             </div>
@@ -92,35 +95,35 @@
 
         <main class="">
             <!-- About section start -->
-            <section class="about" id="about">
-                <div class="layout-container px-12 mb-[102px]">
+            <section class="about px-2.5 md:px-6 lg:px-0" id="about">
+                <div class="layout-container px-12 md:mb-[52px] lg:mb-[102px]">
                     <h3 class="heading__2 text-center">How it works?</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-[150px] gap-y-12 mt-[70px]">
+                    <div class="grid grid-cols-1 gap-y-12 mt-[30px] md:mt-[40px] md:gap-x-[80px] md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[150px]">
                         <div class="box flex flex-col text-center relative">
-                            <img src="./public/images/about-icon-left.png" class="absolute hidden lg:block top-10 left-[90%]" alt="">
-                            <div class="bg-[#9672FF] w-20 h-20 rounded-xl mx-auto flex items-center justify-center">
+                            <img src="./public/images/about-icon-left.png" class="absolute hidden md:block top-10 md:w-4/6 md:left-[80%] lg:left-[90%]" alt="">
+                            <div class="bg-[#9672FF] w-[60px] h-[60px] rounded-xl mx-auto flex items-center justify-center  md:w-16 md:h-16  lg:w-20 lg:h-20">
                                 <img src="./public/images/about-icon-1.png" class="w-6 h-6 leading-none text-white" alt="">
                             </div>
                             
-                            <h4 class="text-xl text-orange-primary font-semibold mb-3 mt-12">Research Suburbs</h4>
-                            <p class="font-roboto text-base text-gray-500 leading-7">Wonder twenty hunted and put income set desire expect. Am cottage calling.</p>
+                            <h4 class="text-lg text-orange-primary font-semibold mb-1 mt-3 md:mb-1.5 lg:mb-3 md:mt-7 lg:text-xl lg:mt-12">Research Suburbs</h4>
+                            <p class="font-roboto text-sm lg:text-base text-gray-500 leading-7">Wonder twenty hunted and put income set desire expect. Am cottage calling.</p>
                         </div>
                         <div class="box flex flex-col text-center">
-                            <div class="bg-[#4DDFFD] w-20 h-20 mx-auto rounded-xl flex items-center justify-center">
+                            <div class="bg-[#4DDFFD] w-[60px] h-[60px] mx-auto rounded-xl flex items-center justify-center  md:w-16 md:h-16  lg:w-20 lg:h-20">
                                 <img src="./public/images/about-icon-2.png" class="w-6 h-6 leading-none text-white" alt="">
                             </div>
                             
-                            <h4 class="text-xl text-orange-primary font-semibold mb-3 mt-12">Instant Valuation</h4>
-                            <p class="font-roboto text-base text-gray-500 leading-7">Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
+                            <h4 class="text-lg text-orange-primary font-semibold mt-3 md:mb-1.5 lg:mb-3 md:mt-7 lg:text-xl lg:mt-12">Instant Valuation</h4>
+                            <p class="font-roboto text-sm lg:text-base text-gray-500 leading-7">Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
                         </div>
                         <div class="box flex flex-col text-center relative">
                             <img src="./public/images/about-icon-right.png" class="absolute hidden lg:block top-10 right-[90%]" alt="">
-                            <div class="bg-[#F2B8EC] w-20 h-20 mx-auto rounded-xl flex items-center justify-center">
+                            <div class="bg-[#F2B8EC] w-[60px] h-[60px] mx-auto rounded-xl flex items-center justify-center  md:w-16 md:h-16 lg:w-20 lg:h-20">
                                 <img src="./public/images/about-icon-3.png" class="w-6 h-6 leading-none text-white" alt="">
                             </div>
                             
-                            <h4 class="text-xl text-orange-primary font-semibold mb-3 mt-12">Track Property</h4>
-                            <p class="font-roboto text-base text-gray-500 leading-7">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.</p>
+                            <h4 class="text-lg text-orange-primary font-semibold mt-3 md:mb-1.5 lg:mb-3 md:mt-7 lg:text-xl lg:mt-12">Track Property</h4>
+                            <p class="font-roboto text-sm lg:text-base text-gray-500 leading-7">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.</p>
                         </div>    
                     </div>
                 </div>
@@ -128,22 +131,22 @@
             <!-- About section end -->
 
             <!-- Services section start -->
-            <section class="services" id="services">
-                <div class="layout-container py-[123px]">
-                    <div class="flex justify-between items-start">
+            <section class="services px-2.5 md:px-6 lg:px-0" id="services">
+                <div class="layout-container py-[43px] md:py-[73px] lg:py-[123px]">
+                    <div class="flex flex-col justify-between items-start gap-y-4 md:gap-x-10 md:flex-row  lg:gap-x-0">
                         <div>
-                            <h2 class="heading__2">Best Real Estate Deals</h2>
-                            <p class="text-base text-gray-600 max-w-[470px]">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+                            <h2 class="heading__2 text-center md:text-left">Best Real Estate Deals</h2>
+                            <p class="text-sm leading-6 text-gray-600 text-center max-w-full md:text-left lg:max-w-[490px] lg:leading-8 lg:text-base">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
                         </div>
-                        <button class="btn capitalize h-auto text-[17px] px-8 py-6 rounded-lg shadow-2xl">View all property</button>
+                        <button class="btn capitalize h-auto text-[14px] px-5 py-3.5 rounded-lg shadow-2xl md:text-[15px] md:px-6 md:py-5 lg:px-8 lg:py-6 lg:text-[17px]">View all property</button>
                     </div>
-                    <div class="flex items-center gap-x-[50px] mb-11 mt-12">
-                        <h5 class="text-[19px] font-semibold leading-[26px] text-[#F85A47] underline underline-offset-[12px]">Residential Property</h5>
-                        <h5 class="text-[19px] font-semibold leading-[26px]">Commercial Property</h5>
-                        <h5 class="text-[19px] font-semibold leading-[26px]">Agriculture Property</h5>
-                        <h5 class="text-[19px] font-semibold leading-[26px]">Industrial Property</h5>
+                    <div class="grid grid-cols-2 gap-x-[14px] gap-y-[14px] mb-6 mt-6  md:mb-7 md:mt-8 md:gap-x-[20px] md:grid-cols-3 md:gap-y-6  lg:mb-11 lg:mt-12 lg:grid-cols-5 lg:gap-x-[50px] lg:gap-y-10">
+                        <h5 class="text-[15px] md:text-[17px] lg:text-[19px] font-semibold leading-[26px] text-[#F85A47] underline underline-offset-[7px] md:underline-offset-[9px] lg:underline-offset-[12px]">Residential Property</h5>
+                        <h5 class="text-[15px] md:text-[17px] lg:text-[19px] font-semibold leading-[26px]">Commercial Property</h5>
+                        <h5 class="text-[15px] md:text-[17px] lg:text-[19px] font-semibold leading-[26px]">Agriculture Property</h5>
+                        <h5 class="text-[15px] md:text-[17px] lg:text-[19px] font-semibold leading-[26px]">Industrial Property</h5>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px]">
+                    <div class="grid grid-cols-1 gap-x-[20px] gap-y-[20px] md:grid-cols-2 md:gap-x-[25px] md:gap-y-[25px] lg:gap-x-[30px] lg:gap-y-[30px] lg:grid-cols-3">
                         <div class="box relative cursor-pointer">
                             <div class="tags">
                                 <span class="tag__content">Featured</span>
@@ -172,45 +175,45 @@
             <!-- Services section end -->
 
             <!-- Featured section start -->
-            <section class="featured" id="featured">
-                <div class="layout-container mt-[120px]">
-                    <h2 class="heading__2 text-center mb-24">Featured Listing of the Week</h2>
+            <section class="featured px-2.5 md:px-6 lg:px-0" id="featured">
+                <div class="layout-container mt-[25px] md:mt-[50px] lg:mt-[120px]">
+                    <h2 class="heading__2 text-center mb-5 md:mb-8 lg:mb-24">Featured Listing of the Week</h2>
                 
-                    <div class="p-10 bg-[#F1FFFF] flex items-start gap-x-[77px]">
-                        <div class="featured__images h-[601px]">
-                            <img src="./public/images/featured-1.png" class="max-w-[492px] object-cover" alt="">
-                            <img src="./public/images/featured-2.png" class="relative -top-28 left-[41px] drop-shadow-custom-1" alt="">
+                    <div class="p-7 md:p-10 bg-[#F1FFFF] flex flex-col items-start gap-x-[77px] gap-y-[50px] lg:flex-row">
+                        <div class="featured__images h-[361px] md:h-[500px] md:mx-auto lg:h-[601px] lg:mx-0">
+                            <img src="./public/images/featured-1.png" class="max-w-full md:max-w-[442px] object-cover lg:max-w-[492px]" alt="">
+                            <img src="./public/images/featured-2.png" class="relative drop-shadow-custom-1 -top-16 left-[32px] md:left-[52px] max-w-[250px] md:max-w-[342px] md:-top-24 lg:-top-28 lg:left-[42px] lg:max-w-[492px]" alt="">
                         </div>
                         <div class="featured__content">
-                            <h3 class="mt-8 text-[32px] font-semibold leading-[42px] text-transparent bg-clip-text bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500">The and collecting for the motionless difficulty son.</h3>
-                            <p class="mt-6 text-base leading-7 text-[#545A58] max-w-[370px]">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but difficult situations.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[37px] mt-[42px]">
+                            <h3 class="text-gradient-style-color-messenger mt-5 text-[18px] font-semibold leading-[28px] md:leading-[36px] md:text-[24px] md:mt-7 lg:mt-8 lg:text-[32px] lg:leading-[42px]">The and collecting for about with the motionless difficulty son.</h3>
+                            <p class="mt-2 text-[15px] max-w-full leading-7 text-[#545A58] md:mt-3 lg:mt-6 lg:max-w-[370px] lg:text-base">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but difficult situations.</p>
+                            <div class="grid grid-cols-2 mt-[16px] gap-x-5 gap-y-5 md:gap-x-[30px] md:gap-y-[30px] md:grid-cols-3 md:mt-[22px] lg:mt-[42px] lg:grid-cols-4 lg:gap-x-[30px] lg:gap-y-[37px]">
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Budget</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Budget</p>
                                     <p class="text-[#545A58] text-[17px]">Confidential</p>
                                 </div>
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Size</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Size</p>
                                     <p class="text-[#545A58] text-[17px]">1200 m <sup class="inline-block transform -translate-x-1">2</sup></p>
                                 </div>
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Type</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Type</p>
                                     <p class="text-[#545A58] text-[17px]">Office</p>
                                 </div>
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Status</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Status</p>
                                     <p class="text-[#545A58] text-[17px]">Done</p>
                                 </div>
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Location</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Location</p>
                                     <p class="text-[#545A58] text-[17px]">Switzerland</p>
                                 </div>
                                 <div class="max-w-[100px]">
-                                    <p class="text-[17px] font-bold leading-6 mb-3">Flat</p>
+                                    <p class="text-[17px] font-bold leading-6 mb-1.5 lg:mb-3">Flat</p>
                                     <p class="text-[#545A58] text-[17px]">8 Room</p>
                                 </div>
                             </div>
-                            <button class="btn w-5/6 uppercase block text-[18px] font-medium mt-[48px] rounded-lg">YES! I WANT BOOK “OFFICE PACKAGE”</button>
+                            <button class="btn w-auto uppercase block text-[15px] font-medium mt-[28px] rounded-lg py-3.5 px-4 md:px-6 md:py-5 md:mt-[32px] lg:mt-[48px] lg:w-5/6 lg:text-[18px] ">YES! I WANT BOOK “OFFICE PACKAGE”</button>
                         </div>
                     </div>
                 </div>
@@ -218,76 +221,82 @@
             <!-- Featured section end -->
             
             <!-- Blogs section start -->
-            <section class="blogs" id="blogs">
-                <div class="layout-container mt-[190px] mb-[200px]">
-                    <h2 class="heading__2 max-w-[570px] leading-[55px] mb-[50px]">Loved by businesses, and individuals across the globe.</h2>
-                    <div class="blog-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px]">
-                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
-                            <div class="rating text-[#FBB040] mb-8">
+            <section class="blogs px-2.5 md:px-6 lg:px-0" id="blogs">
+                <div class="layout-container mt-[40px] mb-[60px]  md:mt-[80px] md:mb-[100px]  lg:mt-[190px] lg:mb-[200px]">
+                    <h2 class="heading__2 max-w-full leading-[40px] mb-[20px] md:mb-[30px] lg:max-w-[570px] lg:leading-[55px] lg:mb-[50px]">Loved by businesses, and individuals across the globe.</h2>
+                    <div class="blog-content grid grid-cols-1 gap-x-[30px] gap-y-[30px]  md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-[30px]">
+                        <div class="box px-6 py-6 border-2 border-gray-200 rounded-xl shadow-xl md:px-6 md:py-[30px] lg:px-9 lg:py-[52px]">
+                            <div class="rating text-[#FBB040] mb-2 md:mb-4 lg:mb-8">
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star-half w-4 h-4 mr-1"></i>
                             </div>
-                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> Moderate children at of outweigh it. Unsatiable it considered invitation he
-                                 travelling insensible. Consulted admitting oh mr up as described.
-                            </p>
-                            <div class="flex items-center gap-x-5">
-                                <div class="avatar">
-                                    <img src="./public/images/user-1.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
-                                </div>
-                                <div class="info">
-                                    <h5 class="text-base font-bold">Jane Cooper</h5>
-                                    <p class="text-sm text-gray-500">Los Angeles, CA</p>
-                                </div>
+                            <div class="info-user flex flex-col justify-between md:h-[200px] lg:h-[240px]">
+                                <p class="text-base leading-7 text-gray-600 mb-[15px] md:mb-[30px] lg:mb-[53px]"> Moderate children at of outweigh it. Unsatiable it considered invitation he
+                                    travelling insensible. Consulted admitting oh mr up as described.
+                               </p>
+                               <div class="flex items-center justify-end gap-x-5">
+                                   <div class="avatar">
+                                       <img src="./public/images/user-1.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                   </div>
+                                   <div class="info">
+                                       <h5 class="text-base font-bold">Jane Cooper</h5>
+                                       <p class="text-sm text-gray-500">Los Angeles, CA</p>
+                                   </div>
+                               </div>
                             </div>
                         </div>
-                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
-                            <div class="rating text-[#FBB040] mb-8">
+                        <div class="box px-6 py-6 border-2 border-gray-200 rounded-xl shadow-xl md:px-6 md:py-[30px] lg:px-9 lg:py-[52px]">
+                            <div class="rating text-[#FBB040] mb-2 md:mb-4 lg:mb-8">
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star-half w-4 h-4 mr-1"></i>
                             </div>
-                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> The and collecting motionless difficulty son. 
-                                His hearing staying ten colonel met. Sex drew six easy four dear cold
-                            </p>
-                            <div class="flex items-center gap-x-5">
-                                <div class="avatar">
-                                    <img src="./public/images/user-2.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
-                                </div>
-                                <div class="info">
-                                    <h5 class="text-base font-bold">Robert Fox</h5>
-                                    <p class="text-sm text-gray-500">New York City, NY</p>
+                            <div class="info-user flex flex-col justify-between md:h-[200px] lg:h-[240px]">
+                                <p class="text-base leading-7 text-gray-600 mb-[15px] md:mb-[30px] lg:mb-[53px]"> The and collecting motionless difficulty son. 
+                                    His hearing staying ten colonel met. Sex drew six easy four dear cold
+                                </p>
+                                <div class="flex items-center justify-end gap-x-5">
+                                    <div class="avatar">
+                                        <img src="./public/images/user-2.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                    </div>
+                                    <div class="info">
+                                        <h5 class="text-base font-bold">Robert Fox</h5>
+                                        <p class="text-sm text-gray-500">New York City, NY</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="box px-9 py-[52px] border-2 border-gray-200 rounded-xl shadow-xl">
-                            <div class="rating text-[#FBB040] mb-8">
+                        <div class="box px-6 py-6 border-2 border-gray-200 rounded-xl shadow-xl md:px-6 md:py-[30px] lg:px-9 lg:py-[52px]">
+                            <div class="rating text-[#FBB040] mb-2 md:mb-4 lg:mb-8">
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-solid fa-star w-4 h-4 mr-1"></i>
                                 <i class="fa-regular fa-star w-4 h-4 mr-1"></i>
                             </div>
-                            <p class="text-base leading-7 text-gray-600 mb-[53px]"> Sociable on as carriage my position weddings raillery consider. 
-                                Peculiar trifling absolute and wandered vicinity property yet.
-                            </p>
-                            <div class="flex items-center gap-x-5">
-                                <div class="avatar">
-                                    <img src="./public/images/user-3.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
-                                </div>
-                                <div class="info">
-                                    <h5 class="text-base font-bold">Leslie Alexander</h5>
-                                    <p class="text-sm text-gray-500">Buffalo, NJ</p>
+                            <div class="info-user flex flex-col justify-between md:h-[200px] lg:h-[240px]">
+                                <p class="text-base leading-7 text-gray-600 mb-[15px] md:mb-[30px] lg:mb-[53px]"> Sociable on as carriage my position weddings raillery consider. 
+                                    Peculiar trifling absolute and wandered vicinity property yet.
+                                </p>
+                                <div class="flex items-center justify-end gap-x-5">
+                                    <div class="avatar">
+                                        <img src="./public/images/user-3.png" class="w-14 h-14 object-cover rounded-full" alt="user 1">
+                                    </div>
+                                    <div class="info">
+                                        <h5 class="text-base font-bold">Leslie Alexander</h5>
+                                        <p class="text-sm text-gray-500">Buffalo, NJ</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-[84px] flex items-center justify-between">
-                        <div class="logo flex flex-col md:flex-row items-center gap-x-[80px]">
+                    <div class="mt-[64px] flex flex-col items-center justify-between md:mt-[74px] lg:mt-[84px] lg:flex-row">
+                        <div class="grid grid-cols-3 items-center mb-7 gap-x-[40px] gap-y-[30px]  md:flex md:flex-row md:grid-cols-none md:gap-x-[80px] md:mb-12  lg:mb-0">
                             <img src="./public/images/logo-airbnb.png" alt="logo-airbnb">
                             <img src="./public/images/logo-cisco.png" alt="logo-cisco">
                             <img src="./public/images/logo-ebay.png" alt="logo-ebay">
@@ -305,22 +314,22 @@
         </main>
 
         <!-- Footer section start -->
-        <footer class="footer bg-[#f0f3f3]">
+        <footer class="footer bg-[#f0f3f3] px-2.5 md:px-6 lg:px-0">
             <div class="layout-container">
-                <h2 class="heading__2 text-center text-[45px] pt-[160px]">Get Our Newsletter</h2>
-                <p class="mb-[34px] mt-[11px] font-bold text-[23px] text-center">To join the worldwide community</p>
-                <form class="form-subscribes max-w-[683px] mx-auto shadow-custom-1 py-[26px] px-[30px] bg-white flex items-center justify-between rounded-xl border-2 border-white" method="post">
+                <h2 class="heading__2 text-center pt-[40px] md:pt-[80px] lg:pt-[160px]">Get Our Newsletter</h2>
+                <h4 class="mb-[12px] mt-[0px] text-center text-color-btn font-bold text-[15px]  md:text-[18px] md:mb-[24px]  lg:mb-[34px] lg:text-[23px] lg:mt-[11px]">To join the worldwide community</h4>
+                <form class="form-subscribes max-w-full lg:max-w-[683px] mx-auto shadow-2xl lg:shadow-custom-1 py-[12px] px-[14px] bg-white flex items-center justify-between rounded-xl border-2 border-white  md:py-[15px] md:px-[20px]  lg:px-[30px] lg:py-[26px]" method="post">
                     <div class="input-group flex-1 flex flex-col">
-                        <label for="input-email" class="text-[15px] font-medium text-gray-400 tracking-wide leading-7">Type your Email Address</label>
-                        <input type="email" name="mail" id="input-email" class="w-full border-red-300 text-[20px] outline-none tracking-wide font-bold placeholder:text-gray-800" placeholder="abc@gmail.com">
+                        <label for="input-email" class="text-[14px] font-medium text-gray-400 tracking-wide leading-7  lg:text-[15px]">Type your Email Address</label>
+                        <input type="email" name="mail" id="input-email" class="w-full border-red-300 text-[16px] outline-none tracking-wide font-bold placeholder:text-gray-800  md:text-[18px]  lg:text-[20px]" placeholder="abc@gmail.com">
                     </div>
                     <input type="submit" value="Send now" class="btn py-5 rounded-xl">
                 </form>
             </div>
-            <div class="px-[273px] pt-[60px] pb-[36px] mt-[160px]">
-                <div class="flex items-center justify-between pt-[60px] border-t-2 border-gray-300">
+            <div class="px-[50px] md:px-[100px] lg:px-[273px] pb-[36px] mt-[60px] md:mt-[110px] lg:mt-[160px]">
+                <div class="flex flex-col items-center justify-between gap-y-3 pt-[20px] border-t-2 border-gray-300  md:gap-y-6 md:pt-[30px]  lg:pt-[60px] lg:gap-y-0 lg:flex-row">
                     <a href="/" class="logo text-2xl font-extrabold leading-8">SmartSpace</a>
-                    <ul class="flex flex-col md:flex-row items-center gap-x-[46px]">
+                    <ul class="flex flex-col items-center gap-y-4  md:flex-row md:gap-x-[25px] md:gap-y-0  lg:gap-x-[46px]">
                         <li><a href="/" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Home</a></li>
                         <li><a href="#about" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">About</a></li>
                         <li><a href="#services" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Services</a></li>
@@ -328,7 +337,7 @@
                         <li><a href="#blogs" class="text-[16px] text-gray-600 font-bold hover:underline hover:text-color-btn underline-offset-4 hover:italic transition-all ease-in-out duration-500">Blog</a></li>
                     </ul>
                 </div>
-                <div class="creadit__footer mt-[70px] text-center text-[14px] text-gray-600 font-bold">
+                <div class="creadit__footer mt-[30px] text-center text-[14px] text-gray-600 font-bold  md:mt-[50px]  lg:mt-[70px]">
                     <p>Copyright &copy; 2021 AR Shakir || <span class="text-color-btn">Monday, May 9, 2022</span></p>
                 </div>
             </div>
